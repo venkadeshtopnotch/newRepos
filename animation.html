@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animation</title>
+    
+    <style>
+        .big{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color:#613b42e1;
+            }
+        .small{
+            display: inline-block;
+            text-align: center;
+            
+            border-radius: 50%;
+            height: 420px;
+            width: 420px;
+            background-color: rgb(74, 247, 6);
+            margin: 1px;
+            padding: 12px;
+            animation: moulee 8s infinite linear;
+            cursor: pointer;
+        }
+ 
+
+@keyframes moulee {
+		0% {
+				transform:rotate(0deg);
+                
+                
+		}
+		50%{
+				transform:rotate(120deg);
+                height: 100px;
+                width: 100px;
+
+		}
+        100%{
+            transform:rotate(360deg);
+            height: 420px;
+            width: 420px;
+
+        }
+}
+    </style>
+</head>
+    <body>
+        <div class="big">
+           
+            <img  class="small" src="1.jpg"/>
+            
+        </div>
+    </body>
+</html>
